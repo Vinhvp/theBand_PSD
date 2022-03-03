@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./style.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -26,15 +30,33 @@
                     <li class="header__menu-item">
                         <a href="" class="header__menu-link">CONTACT</a>
                     </li>
-                    <li class="header__menu-item">
-                        <a href="" class="header__menu-link">MORE</a>
+                    <li id = 'sub-link' class="header__menu-item">
+                        <a href="" class="header__menu-link">MORE<span><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul class="header__menu-sub-list">
+                            <li class="header__menu-item header__menu-sub-item">
+                                <a href="#" class="header__menu-link header__menu-sub-link">Merchandise</a>
+                            </li>
+                            <li class="header__menu-item header__menu-sub-item">
+                                <a href="#" class="header__menu-link header__menu-sub-link">Extras</a>
+                            </li>
+                            <li class="header__menu-item header__menu-sub-item">
+                                <a href="#" class="header__menu-link header__menu-sub-link">Media</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="header__search-box">
                     <button class="header__search-box-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
         </div>
-        <div class="slider"></div>
+        <div class="slider">
+           <div class="overlay">
+                <div class="slider__info">
+                    <h2 class="slider__info-title">LOS ANGELES</h2>
+                    <div class="slider__info-content">Michael Jackson's band live 1989</div>
+                </div>
+           </div>
+        </div>
         <div class="content">
             <div class="content__about"></div>
             <div class="content__tour"></div>
@@ -45,5 +67,6 @@
         <div class="footer"></div>
         .
     </div>
+
 </body>
 </html>
