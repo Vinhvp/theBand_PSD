@@ -12,6 +12,10 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  font-size: 1.4rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -103,6 +107,7 @@ img {
 }
 
 .slider {
+  margin-bottom: 7rem;
   position: relative;
   color: #fcf8f8;
   font-size: 2rem;
@@ -119,6 +124,92 @@ img {
 }
 .slider__info h2 {
   font-size: 3rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.content__about__title, .content__about__descr {
+  margin: 1rem auto;
+}
+.content__about__content {
+  line-height: 3rem;
+  text-align: justify;
+}
+.content__team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content__team-info {
+  max-width: 20rem;
+  padding: 6rem 0;
+}
+.content__team__name {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.content__team__img {
+  opacity: 0.8;
+}
+.content__tour {
+  background-color: #2b2929;
+}
+.content__tour-info {
+  padding: 8rem 0;
+}
+.content__tour__title, .content__tour__descr {
+  color: white;
+}
+.content__tour-list {
+  background-color: white;
+}
+.content__tour-item {
+  position: relative;
+  color: gray;
+  padding: 1rem;
+  border: 1px solid #c2bbbb;
+}
+.content__tour-item-so {
+  margin-left: 2rem;
+  background-color: #f44336;
+  color: white;
+  width: fit-content;
+  padding: 0.5rem;
+}
+.content__tour-item-quantity {
+  font-size: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  color: white;
+  background-color: #2b2929;
+  padding: 0.3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+.descr {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+  color: gray;
+  padding: 2rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
