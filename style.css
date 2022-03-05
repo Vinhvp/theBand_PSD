@@ -12,6 +12,10 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
+.wrapper {
+  height: 350rem;
+}
+
 body {
   font-size: 1.4rem;
 }
@@ -157,7 +161,9 @@ img {
   opacity: 0.8;
 }
 .content__tour {
-  background-color: #2b2929;
+  background-color: black;
+  height: 85rem;
+  margin-bottom: 9rem;
 }
 .content__tour-info {
   padding: 8rem 0;
@@ -195,6 +201,71 @@ img {
   text-align: center;
   margin: 0 auto;
 }
+.content__tour-destinate {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+.content__tour-card {
+  max-width: 25rem;
+  height: 37rem;
+  background-color: white;
+}
+.content__tour-card-img > img {
+  min-height: 19rem;
+}
+.content__tour-card-date {
+  opacity: 0.6;
+}
+.content__tour-card-title, .content__tour-card-date, .content__tour-card-para {
+  padding: 1rem;
+}
+.content__tour-card-para {
+  padding-bottom: 3rem;
+}
+.content__tour-card-btn {
+  margin-left: 1rem;
+}
+.content__contact {
+  font-size: 1.8rem;
+  margin-bottom: 15rem;
+}
+.content__contact-descr > i {
+  margin-right: 1rem;
+}
+.content__contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+}
+.content__contact-info, .content__contact-formSub {
+  width: 50%;
+}
+.content__contact-formSub {
+  position: relative;
+}
+.content__contact-formSub-name, .content__contact-formSub-email {
+  margin-top: 2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.content__contact-formSub-name {
+  margin-right: 1.5rem;
+}
+.content__contact-formSub-mess > input {
+  width: 39rem;
+}
+.content__contact-formSub-btn {
+  margin-top: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.content__map {
+  margin-bottom: 4rem;
+}
 
 .title {
   text-align: center;
@@ -210,6 +281,44 @@ img {
   font-weight: 600;
   color: gray;
   padding: 2rem 0;
+}
+
+.text-clamp {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: black;
+  width: fit-content;
+}
+
+.btn:hover {
+  color: #f44336;
+}
+
+input {
+  height: 4rem;
+  width: 18.5rem;
+}
+
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: gray;
+}
+.footer > p {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */

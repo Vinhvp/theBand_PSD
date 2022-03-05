@@ -10,6 +10,9 @@ html,body{
     font-size: 62.5%;
     font-family: "Roboto",sans-serif;
 }
+.wrapper{
+    height: 350rem;
+}
 body{
     font-size: 1.4rem;
 }
@@ -159,7 +162,9 @@ img{
         }
     }
     &__tour{
-        background-color: #2b2929;
+        background-color: black;
+        height: 85rem;
+        margin-bottom: 9rem;
         &-info{
             padding: 8rem 0;
         }
@@ -197,6 +202,75 @@ img{
                 margin: 0 auto;
             }
         }
+        &-destinate{
+            @include flex(stretch,space-between);
+            flex-direction: row;
+        }
+        &-card{
+           
+            
+            max-width: 25rem;
+            height: 37rem;
+            background-color: white;
+            &-img > img{
+                min-height: 19rem;
+            }
+            &-date{
+                opacity: 0.6;
+            }
+            &-title,
+            &-date,
+            &-para{
+                padding: 1rem;
+            }
+            &-para{
+              
+                padding-bottom: 3rem;
+            }
+            &-btn{
+                margin-left: 1rem;
+            }
+            
+        }
+    }
+    &__contact{
+        font-size: 1.8rem;
+        margin-bottom: 15rem;
+        &-descr > i{
+            margin-right: 1rem;
+        }
+        &__form{
+            @include flex(center,space-between);
+        }
+        &-info,
+        &-formSub{
+            width: 50%;
+                    
+        }
+        &-formSub{
+            position: relative;
+           &-name,
+           &-email{
+               margin-top: 2rem;
+               display: inline-block;
+               margin-bottom: 1rem;
+           }
+           &-name{
+               margin-right: 1.5rem;
+           }
+           &-mess > input{
+               width: 39rem;
+           }
+           &-btn{
+               margin-top: 2rem;
+               position: absolute;
+               right: 1rem;
+           }
+        }
+        
+    }
+    &__map{
+        margin-bottom: 4rem;
     }
 }
 .title{
@@ -212,4 +286,40 @@ img{
     font-weight: 600;
     color: gray;
     padding: 2rem 0;
+}
+.text-clamp{
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+  /* Needed to make it work */
+    overflow: hidden;
+    white-space: nowrap;
+}
+.btn{
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: black;
+    width: fit-content;
+}
+
+.btn:hover{
+    color: #f44336;
+}
+
+input{
+    height: 4rem;
+    width: 18.5rem;
+}
+
+.footer{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: gray;
+    & > p {
+        padding-top: 1rem;
+        font-size: 1.4rem;
+        font-style: italic;
+    };
 }
